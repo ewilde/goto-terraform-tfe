@@ -17,6 +17,11 @@ resource "github_repository" "documentation" {
   default_branch = "master"
 }
 
+resource "github_repository" "userguides" {
+  name           = "userguides"
+  description    = "company wide awesome userguides"
+}
+
 // teams
 resource "github_team" "content" {
   name        = "Content"
